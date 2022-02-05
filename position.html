@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding-top: 100px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .estatico {
+      background: #F00;
+      top: 30px;
+      position: static;
+    }
+    .fixo {
+      background: green;
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      z-index: 100;
+    }
+    .relativo {
+      position: relative;
+      top: 10px;
+      left: 0;
+    }
+    .absoluto {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      background: gray;
+      z-index: 300;
+    }
+    .btn-carrinho {
+      position: relative;
+    }
+    .medalha {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: red;
+    }
+    .adesivo {
+      background: yellow;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p class="estatico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.<span class="absoluto">Aqui é absoluto</span></p>
+  <button class="btn-carrinho">Carrinho <span class="medalha">15</span></button>
+  <p class="fixo">Este é fixo</p>
+  <p class="relativo">Este é relativo <span class="absoluto">Aqui é absoluto</span></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p class="absoluto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p class="adesivo">Este é sticky</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente, odio aliquid accusamus distinctio tempore, omnis repellat aut magnam nobis est eius voluptates nesciunt ducimus, corporis possimus vero maiores iure.</p>
+</body>
+</html>

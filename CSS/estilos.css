@@ -1,0 +1,192 @@
+body {
+    font-family: 'arial', serif;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+.corpo {
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 20px auto;
+  
+}
+
+.linha1 {
+    color: #000;
+    margin: 5px auto;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+  
+ }
+
+
+.menu1 {
+    background-color: #ffc400;
+    display: grid;
+    grid-template-columns: 7% 7% 7% 7% 52% 5% 5% 5% 5% ;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.445);
+    
+}
+
+.menu2 {
+  background-color: #ffc400;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  align-items: top;
+
+  
+}
+
+.linha2 {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  font-weight: bold;
+  transition: all .2s;
+  
+}
+
+.linha3 {
+  width: 150px;
+  height: auto;
+  margin: 0;
+  background-color: white;
+  position: absolute;
+  transition: all .2s;
+  visibility: hidden;
+  font-weight: lighter;
+}
+
+.linha2:hover .linha3{
+  visibility: visible;
+}
+
+.menu2 a{
+  padding: 15px;
+  color: #000;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  
+}
+
+.bt3{
+  width: 50px;
+  height: 50px;
+  background-color: #ffc400;
+  display: none;
+}
+
+#btmenu{
+  display: none;
+}
+
+#check{
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+
+@media (max-width: 860px) {
+
+  #btmenu:checked ~ .menu2{
+    display: block;
+    margin-left: 0;
+  }
+  
+  .menu1{
+    border-bottom: none;
+    grid-template-columns: 70% 15% 15%;
+
+  }
+  .linha1{
+    display: none;
+  }
+
+  .linha2{
+    background-color: white;
+  }
+
+  .linha2:hover .linha3{
+    position: absolute;
+    left: 150px;
+    top: 0;
+  }
+
+  .menu2{
+    display: none;
+    width: 150px;
+    grid-template-columns: auto;
+    margin-left: -100%;
+    transition: all .4s;
+    background-color: white;
+    height: 0;
+  }
+
+  .bt3{
+    display: block;
+    float: left;
+  }
+  
+  
+
+  #logo{
+    display: block ;
+  }
+
+  #entre{
+    display: block ;
+  }
+
+  #assine{
+    display: block ;
+  }
+
+}
+
+
+  
+  
+.Assine-Uol{
+    color: green;
+    text-decoration: none;
+
+}
+.cabeca {
+  background-color: #ff8000;
+}
+img {
+  max-width: 100%;
+}
+.tab-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.relacionada {
+  width: 200px;
+  text-decoration: none;  
+}
+
+a {
+  text-decoration: none;
+}
+
+.video {
+  max-width: 100%;
+}
