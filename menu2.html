@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Teste 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color:  #ffc400;  
+            max-width: 100%;
+            min-height: 30px;
+            height: 8vh;
+        }
+        .linha1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            height: 8vh;
+            min-height: 30px;
+            position: relative;
+         
+        }
+        .linha2{
+            display: none;
+            list-style: none;
+            top: 8vh;
+            background-color: #ffc400;
+            position: absolute;
+        
+
+ 
+        }
+
+        .sub-linha1:hover .linha2{
+            display: block;
+        }
+        
+        .bt3{
+            width: 8vh;
+            height: 8vh;
+            display: none;
+            float: left;
+            background-color:  #ffc400;
+            min-height: 30px;
+            min-width: 30px;
+            cursor: pointer;
+            position: relative;
+    
+         }
+
+         .sub-linha2{
+            padding: 5px;
+         }
+
+    #btmenu{
+        display: none;
+    }
+
+    @media (max-width: 860px) {
+        .linha1{
+            display: none;
+        }
+
+        .sub-linha1{
+            background-color:  white;
+            z-index: 1;
+            padding: 5px;
+            width: 30vh;
+            min-width: 100px;
+        }
+        .bt3{
+            display: block;
+        }
+
+        #btmenu:checked ~ .linha1{
+        display: block;
+        position:absolute;
+        top: 8vh;
+
+        }
+        
+        .linha2{
+            position: static;
+            background-color: white;
+            z-index: 1;
+            width: 30vh;
+            min-width: 100px;
+            }
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="btmenu">
+            <label id="check" for="btmenu"><img class="bt3" src="images/menu.png"></label>
+            <ul class="linha1">
+                <li class="sub-linha1"><a href="#">PAGINA 1</a>
+                    <ul class="linha2">
+                        <li class="sub-linha2"><a href="#">TESTE 1</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 2</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 3</a></li>                        
+                    </ul>
+                </li>
+                <li class="sub-linha1"><a href="#">PAGINA 2</a>
+                    <ul class="linha2">
+                        <li class="sub-linha2"><a href="#">TESTE 1</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 2</a></li>                       
+                    </ul>
+                </li>
+                <li class="sub-linha1"><a href="#">PAGINA 3</a>
+                    <ul class="linha2">
+                        <li class="sub-linha2"><a href="#">TESTE 1</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 2</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 3</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 4</a></li>                            
+                    </ul>
+                </li>
+                <li class="sub-linha1"><a href="#">PAGINA 4</a>
+                    <ul class="linha2">
+                        <li class="sub-linha2"><a href="#">TESTE 1</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 2</a></li>
+                        <li class="sub-linha2"><a href="#">TESTE 3</a></li>                        
+                    </ul>
+                </li>
+                <li class="sub-linha1"><a href="#">PAGINA 5</a>
+                    <ul class="linha2">
+                        <li class="sub-linha2"><a href="#">TESTE 1</a></li>                       
+                    </ul>
+                </li>
+                <li class="sub-linha1"><a href="#">PAGINA 6</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="corpo">  
+        <h1>Palmeiras sofre, mas vence Água Santa na despedida antes do Mundial</h1>
+        <img class="dudu" src="images/dudu-comemora-gol.jpg.webp"
+            alt="Dudu comemora gol do Palmeiras contra o Água Santa pelo Paulistão" />
+        <br />Dudu comemora gol do Palmeiras contra o Água Santa pelo Paulistão
+        <br /><small>Imagem: Ettore Chiereguini/AGIF</small>
+        <p>
+            <hr>CLASSIFICAÇÃO E JOGOS
+            <br /><a href="https://www.uol.com.br/esporte/futebol/campeonatos/paulista" target="_blank">Paulista</a>
+        </p>
+        <p>
+            <hr>
+            Em um jogo muito duro fisicamente, o Palmeiras bateu o Água Santa por 1 a 0 no Allianz Parque, hoje (1), um
+            dia antes da viagem para o Mundial de Clubes. Aos 26 do primeiro tempo, Dudu anotou o gol que garantiu o triunfo
+            alviverde na terceira rodada do Campeonato Paulista.
+        </p>
+        <p>A equipe visitante adotou marcação pesada e dificultou a vida do Verdão, que melhorou após os 20 minutos do
+            primeiro tempo. Na segunda etapa, o time de Diadema teve uma chance clara de empatar, que o goleiro Marcelo
+            Lomba salvou, e ainda um gol bem anulado de Cristiano. O triunfo deixou o time isolado na liderança do Grupo C,
+            com 10 pontos. Sem pontuar, o Água Santa amarga a lanterna do Grupo A.</p>
+        <p>
+            <hr>
+        <h3>RELACIONADAS</h3>
+        <div class="tab-2">
+
+        
+            <div class="relacionada"><img src="images/foto1.jpg" /></div>
+            <div class="relacionada"><a
+                        href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/02/01/dispensado-pelo-cruzeiro-volante-foi-o-capitao-do-palmeiras-na-copinha.htm"
+                        target="_blank"> Dispensado pelo Cruzeiro, volante foi capitão do  Palmeiras na Copinha</a>
+            </div>
+            <div class="relacionada"><img src="images/neto.jpg"></div>
+            <div class="relacionada"><a
+                        href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/02/01/neto-cita-abel-ferreira-para-criticar-trabalho-de-sylvinho-no-corindivians.htm"
+                        target="_blank">Neto cita Abel Ferreira para criticar trabalho de Syvinho no Curica</a></div>
+            
+        </div>
+        </p>
+        <hr>
+        <p><a href="https://conta.uol.com.br/login?t=cad-uol-esporte&env=cadastro&signin=https%3A%2F%2Fcadastro.uol.com.br%2Findexb.html%3Feos%3Dyes%26skin%3Dcadastrounificado%2Fvisitor%2Fpf%26skinPath%3Duol-esporte%26promochild%3DPROMOTNTCONTMTA%26redir%3Dfalse%26pca%3Dassine-uol%26dest%3D&dest=https%3A%2F%2Fcadastro.uol.com.br%2Favulsob.html%3Feos%3Dyes%26skin%3Dcadastrounificado%2Fadditional%2Fdetached%26skinPath%3Duol-esporte%26promo%3DPROMOTNTCONTMTA%26redir%3Dfalse%26pca%3Dassine-uol%26dest%3D"
+                target="_blank">
+                <ul>
+                    <li class=Assine-Uol>Assine UOL e Estádio TNT Sports para assistir a jogos exclusivos e às finais do Paulistão 2022.</li>
+                </ul>
+
+            </a> </p>
+        <p>O Palestra volta a campo somente na terça (8), às 13h30 (de Brasília), quando joga a semifinal do Mundial de
+            Clubes. O adversário sairá do confronto entre Al-Ahly e Monterrey. O Netuno atua em casa, no sábado (5), às 15h,
+            contra o Novorizontino.</p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/p_0_g4p4BXc" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <section>
+            <h2>Quem foi bem: Dudu</h2>
+            <p>
+                O atacante alviverde foi muito acionado pelos lados e levou a melhor sobre a marcação da equipe de Diadema.
+                Desequilibrante, Dudu driblou, armou jogadas e ainda anotou o gol que abriu o marcador no Allianz. Aos 36 da
+                segunda etapa, ainda aplicou uma lambreta em Marcondes.
+            </p>
+        </section>
+        <section>
+            <h2>Quem foi mal: Luan e Jorge</h2>
+            <p>
+                A defesa do Verdão não fez uma boa partida. O time do ABCD paulista levou muito perigo em cruzamentos na área e
+            também aproveitando os vacilos que apareceram, principalmente do lado esquerdo da zaga do time da capital.
+            </p>
+        </section>
+        <section>
+            <h2>Lomba passa muita confiança</h2>
+            <p>
+                Weverton é titular incontestável do Palmeiras, mas Marcelo Lomba mostrou a razão de ter sido contratado para a
+            temporada. O goleiro fez mais uma boa partida e evitou que o Água Santa marcasse na partida.
+            </p>
+        </section>
+        <section>
+            <h2>O jogo do Palmeiras: Dudu resolve.</h2>
+            <p>
+                Diante de um adversário que entrou duro e fez muitas faltas (24 ao todo), o Alviverde conseguiu trabalhar bem a
+            bola e penetrar na defesa adversária depois dos 20 minutos do primeiro tempo. No entanto, o time pareceu ter
+            voltado mais relaxado para a segunda etapa e permitiu que o rival levasse muito perigo ao gol defendido por
+            Marcelo Lomba
+            </p>
+            <p>
+                No ataque, o camisa 7 foi peça crucial para o Verdão. Dudu ganhou praticamente todos os duelos contra a marcação
+            e ajudou demais na criação das jogadas
+            </p>
+        </section>
+        <section>
+            <h2>Cronologia do jogo</h2>
+            <p>
+                O Água Santa adotou formação bem defensiva para tentar segurar o Palmeiras. Até os 20 minutos a ideia funcionou e
+            foi o time de Diadema que levou mais perigo. Dadá Belmonte apareceu nas costas da marcação e aproveitou o
+            cruzamento, mas Lomba segurou a cabeceada.
+            </p>
+            <p>
+                Depois disso, no entanto, o Verdão conseguiu encontrar os espaços no ataque e respondeu com um chute de Veiga,
+            que finalizou para fora, mesmo estando na marca do pênalti. Aos 26, Dudu recebeu na direita, carregou a bola
+            para o meio e arriscou. No meio do caminho, Marcondes desviou e acabou com qualquer chance de defesa do goleiro
+            Matheus Inácio.
+            </p>
+            <p>
+                O Palestra continuou melhor e teve mais duas chances de ampliar ainda na primeira etapa. A primeira, aos 35, com
+            Gustavo Gómez e a segunda com Scarpa, aos 37.
+            </p>
+            <p>
+            Na volta do intervalo, o time do ABC se abriu e deixou o jogo lá e cá. Aos 7, Lomba afastou mal o cruzamento de
+            Rhuan e a bola ficou sozinha para Matheus Oliveira. O meia chutou mal, Jorge conseguiu amortecer e o goleiro do
+            Palmeiras se recuperou rápido no lance para fazer a defesa. Aos 10, Fernandinho bateu na rede pelo lado de fora
+            em outra grande oportunidade do Netuno.
+            </p>
+            <p>
+                Os visitantes conseguiram balançar a rede de Lomba aos 22. Cristiano acertou lindo chute de fora da área e
+            acertou o ângulo, porém estava impedido e teve o tento invalidado. Aos 29, Dadá Belmonte ainda tentou uma
+            cabeceada, entretanto os jogadores do Água Santa sentiram o desgaste e diminuíram o ritmo. O Palmeiras soube
+            administrar bem e, também já de olho no Mundial, não se expôs muito para garantir o triunfo.
+            </p>
+        </section>
+        <section>
+            <h2>Vale tudo para acabar com a discussão?</h2>
+            <p>
+                O primeiro tempo foi bem nervoso, com os jogadores do Água Santa sem aliviar nas entradas. Aos 27, Zé Rafael
+            bateu boca com Rodrigo Sam e o árbitro Salim Fende Chaves não poupou esforços para afastar a briga. O juiz
+            afastou o zagueiro do Netuno da confusão, o segurando até pelo pescoço. Depois disso, ainda mostrou o cartão
+            amarelo.
+            </p>
+        </section>
+
+            <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">Salim Fende Chavez ENFORCOU o jogador do Água Santa pra controlar a partida. Que desastre esse início de temporada dos árbitros da FPF <a href="https://t.co/hMcj23Tekz">pic.twitter.com/hMcj23Tekz</a></p>&mdash; Gustavo Soler (@falasoler) <a href="https://twitter.com/falasoler/status/1488642295134105615?ref_src=twsrc%5Etfw">February 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <section>
+            <h2>Sistema de irrigação ativo mesmo na chuva</h2>
+            <p>
+                Apesar da chuva que começou a cair desde a tarde na cidade de São Paulo, o sistema de irrigação do Allianz Parque
+            foi ativado normalmente antes da partida. Os irrigadores chegaram a ser ativados, enquanto os jogadores do
+            Palmeiras ainda aqueciam no gramado.
+            </p>
+        </section>
+        <section>
+            <h2>FICHA TÉCNICA</h2>
+            <h3>PALMEIRAS 1 x 0 ÁGUA SANTA</h3>
+            <p>
+                <strong>Data:</strong> 01/02/2022
+            </p>
+            <p>
+                <strong>Local:</strong> Allianz Parque, em São Paulo (SP)
+            </p>
+            <p>
+                <strong>Hora:</strong> 19h (de Brasília)
+            </p>
+            <p>
+                <strong>Árbitro:</strong> Salim Fende Chavez;
+                <br><strong>Assitente:</strong> Daniel Paulo Ziolli e Neuza Ines Back;
+                <br><strong>VAR</strong> Rodrigo Guarizo Ferreira do Amaral.
+            </p>
+            <p>
+                <strong>Gol:</strong> Dudu, aos 26 minutos do primeiro tempo, para o Palmeiras.
+            </p>
+            <p>
+                <strong>Cartões Amarelos:</strong> Danilo, Gustavo Gómez (Palmeiras); Matheus Oliveira, Rodrigo Sam, Cristiano, Rhuan, Hélder (Água Santa).
+            </p>
+            <p>
+                <strong>PALMEIRAS:</strong> Marcelo Lomba; Marcos Rocha, Gustavo Gómez, Luan e Jorge; Danilo, Zé Rafael (Atuesta) e Raphael Veiga (Wesley); Scarpa (Jailson), Dudu (Breno Lopes) e Rony (Deyverson). <strong>Técnico:</strong> Abel Ferreira.
+            </p>
+            <p>
+                <strong>ÁGUA SANTA:</strong>Matheus Inácio; Leandro Silva, Marcondes, Rodrigo Sam (Emerson), Hélder e Rhuan; Cristiano, Matheus Oliveira (Alyson) e Dadá Belmonte (Wesley); Fernandinho (Lelê) e Caio Dantas (Vinicius). <strong>Técnico:</strong> Sérgio Grudes.
+            </p>
+        </section>
+        <p>Fonte:<a href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/02/01/palmeiras-x-agua-santa-terceira-rodada-do-paulistao.htm" target="_blank"> https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/02/01/palmeiras-x-agua-santa-terceira-rodada-do-paulistao.htm</a></p>
+    </main>     
+
+</body>
+</html>
