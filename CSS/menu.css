@@ -96,10 +96,8 @@ nav{
         
     }
 
-    #btmenu:checked ~ .linha2{
-        display: block;
-        position:static;
-        }
+
+
 
     .sub-linha1{
         margin: 2vh;

@@ -8,6 +8,12 @@ body {
     padding: 0;
   }
 
+#titulo{
+  width: 90%;
+  text-align: justify;
+  margin: 20px auto;
+}
+
 .corpo {
   width: 90%;
   text-align: justify;
@@ -38,6 +44,9 @@ p{
     text-align: center;
     font-weight: bold;
   
+ }
+ .linha1 a{
+   color: #000;
  }
 
 
@@ -75,17 +84,20 @@ p{
 }
 
 .linha3 {
-  width: 150px;
+  width: 100%;
   height: auto;
   margin: 0;
   background-color: white;
   transition: all .2s;
   display: none;
-  font-weight: lighter;
+  position: relative;
+  top: 10px;
+ 
 }
 
 .linha2:hover .linha3{
   display: block;
+  transition: all .2s;
 }
 
 .menu2 a{
@@ -127,12 +139,22 @@ p{
     grid-template-columns: 70% 15% 15%;
 
   }
+
+  .linha2:hover .linha3{
+    display: block;
+    transition: all .2s;
+  }
   .linha1{
     display: none;
   }
 
   .linha2{
     background-color: white;
+  }
+
+  .linha3 {
+    position: static;
+   
   }
 
 
